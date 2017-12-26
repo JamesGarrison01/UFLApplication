@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">uflApplication</string>
+    <string name="stats">Stats</string>
+    <string name="title_activity_stats">statsActivity</string>
+    <string name="statsButton">Stats Go</string>
+    <string name="teamButton">Team Go</string>
+    <string name="schedButton">Schedule Go</string>
+    <string name="title_activity_schedule">scheduleActivity</string>
+    <string name="title_activity_team">teamActivity</string>
+
+    <string-array name="teams_array">
+        <item>Blackouts</item>
+        <item>Beardos</item>
+        <item>Chupacabras</item>
+        <item>Gnarwhals</item>
+        <item>Hotdogs</item>
+        <item>Unicychos</item>
+        <item>Unicorns</item>
+        <item>WildHogs</item>
+    </string-array>
+</resources>
+
+
