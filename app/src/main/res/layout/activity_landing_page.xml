@@ -6,74 +6,77 @@
     android:layout_height="match_parent"
     tools:context="jeyts.uflapplication.landingPage">
 
-    <EditText
-        android:id="@+id/landingLogoText"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="332dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="449dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@android:string/untitled"
-        android:inputType="textPersonName"
-        android:onClick="goTeam"
-        android:text="Unicycle Football League"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnStats"
         android:layout_width="158dp"
         android:layout_height="89dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="175dp"
         android:hint="@string/statsButton"
         android:onClick="goStats"
         android:text="@string/stats"
         app:layout_constraintBottom_toTopOf="@+id/btnSched"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.714"
-        app:layout_constraintStart_toEndOf="@+id/btnTeams"
-        app:layout_constraintTop_toBottomOf="@+id/landingLogoText" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnTeams"
-        android:layout_width="156dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="17dp"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="175dp"
         android:hint="@string/teamButton"
         android:onClick="goTeam"
         android:text="Teams"
         app:layout_constraintBottom_toTopOf="@+id/btnSched"
         app:layout_constraintEnd_toStartOf="@+id/btnStats"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/landingLogoText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnSched"
-        android:layout_width="327dp"
-        android:layout_height="102dp"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
         android:layout_marginBottom="64dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/schedButton"
         android:onClick="goSched"
-        android:text="Schedule/Location"
+        android:text="Schedule"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ruleBtn"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rule Book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSched" />
+
+    <TextView
+        android:id="@+id/bannerText"
+        android:layout_width="233dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginTop="16dp"
+        android:text="UNICYCLE FOOTBALL LEAGUE"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTeams" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/standingText"
+        android:layout_width="281dp"
+        android:layout_height="207dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:text="1]Gnarwhals\t\t\t\t\t\t8 - 0 \n2]Bierdos            7 - 1 \n3]Hotdogs\t\t\t\t\t\t\t 4 - 4\n4]Unicorns\t\t\t\t\t\t\t 3 - 5\n4]Blackouts\t\t\t\t\t\t3 - 5\n6]Unicychos\t\t\t\t\t\t2 - 6 \n7]Chupacabras\t\t0 - 8"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerText" />
 
 </android.support.constraint.ConstraintLayout>
