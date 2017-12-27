@@ -66,17 +66,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/standingText"
-        android:layout_width="281dp"
-        android:layout_height="207dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="28dp"
-        android:text="1]Gnarwhals\t\t\t\t\t\t8 - 0 \n2]Bierdos            7 - 1 \n3]Hotdogs\t\t\t\t\t\t\t 4 - 4\n4]Unicorns\t\t\t\t\t\t\t 3 - 5\n4]Blackouts\t\t\t\t\t\t3 - 5\n6]Unicychos\t\t\t\t\t\t2 - 6 \n7]Chupacabras\t\t0 - 8"
-        android:textAlignment="gravity"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bannerText" />
-
 </android.support.constraint.ConstraintLayout>

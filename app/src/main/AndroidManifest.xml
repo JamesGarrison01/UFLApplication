@@ -46,7 +46,8 @@
         <activity
             android:name=".blackoutsActivity"
             android:label="@string/title_activity_blackouts"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".newLanding"></activity>
     </application>
 
 </manifest>

@@ -22,6 +22,16 @@
     <string name="large_text">
         ""
     </string>
+    <string name="Standings">
+        "
+        1]Gnarwhals    8 - 0
+        2]Bierdos      7 - 1
+        3]Hotdogs      4 - 4
+        4]Unicorns     3 - 5
+        4]Blackouts    3 - 5
+        6]Unicychos    2 - 6
+        7]Chupacabras  0 - 8"
+    </string>
     <string name="action_settings">Settings</string>
 </resources>
 
