@@ -18,6 +18,11 @@
         <item>Unicorns</item>
         <item>WildHogs</item>
     </string-array>
+    <string name="title_activity_blackouts">blackoutsActivity</string>
+    <string name="large_text">
+        ""
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>
 
 

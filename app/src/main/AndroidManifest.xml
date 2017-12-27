@@ -31,18 +31,22 @@
             android:label="@string/title_activity_schedule"
             android:parentActivityName=".landingPage"
             android:theme="@style/AppTheme.NoActionBar" />
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".teamActivity"
             android:label="@string/title_activity_team"
             android:parentActivityName=".landingPage"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".tempStats" />
-        <activity android:name=".statsSelection"></activity>
+        <activity android:name=".statsSelection" />
+        <activity
+            android:name=".blackoutsActivity"
+            android:label="@string/title_activity_blackouts"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
