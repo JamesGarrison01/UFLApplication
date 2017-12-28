@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">uflApplication</string>
+    <string name="app_name">Unicycle Football</string>
     <string name="stats">Stats</string>
     <string name="title_activity_stats">statsActivity</string>
     <string name="statsButton">Stats Go</string>
@@ -7,6 +7,7 @@
     <string name="schedButton">Schedule Go</string>
     <string name="title_activity_schedule">scheduleActivity</string>
     <string name="title_activity_team">teamActivity</string>
+    <string name="uflLogoText">"Unicycle Football League"</string>
 
     <string-array name="teams_array">
         <item>Blackouts</item>

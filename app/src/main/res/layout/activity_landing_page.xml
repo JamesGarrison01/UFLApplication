@@ -4,66 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bluebackground"
     tools:context="jeyts.uflapplication.landingPage">
 
-    <Button
-        android:id="@+id/btnStats"
-        android:layout_width="158dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/statsButton"
-        android:onClick="goStats"
-        android:text="@string/stats"
-        app:layout_constraintBottom_toTopOf="@+id/btnSched"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnTeams"
-        android:layout_width="158dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:hint="@string/teamButton"
-        android:onClick="goTeam"
-        android:text="Teams"
-        app:layout_constraintBottom_toTopOf="@+id/btnSched"
-        app:layout_constraintEnd_toStartOf="@+id/btnStats"
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="104dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="44dp"
+        android:background="@mipmap/barchart"
+        android:contentDescription="@string/statsButton"
+        android:elevation="2dp"
+        android:onClick="goStats"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnSched"
-        android:layout_width="158dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="64dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/schedButton"
-        android:onClick="goSched"
-        android:text="Schedule"
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="104dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="44dp"
+        android:background="@mipmap/footballrefereewhistle"
+        android:contentDescription="@string/stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="104dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="44dp"
+        android:background="@mipmap/teamshield"
+        android:contentDescription="@string/teamButton"
+        android:elevation="13dp"
+        android:onClick="goTeam"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/ruleBtn"
-        android:layout_width="158dp"
-        android:layout_height="89dp"
-        android:layout_marginBottom="64dp"
-        android:layout_marginEnd="16dp"
-        android:text="Rule Book"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSched" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="104dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="44dp"
+        android:background="@mipmap/calendar"
+        android:contentDescription="@string/schedButton"
+        android:elevation="24dp"
+        android:onClick="goSched"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="272dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="91dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/bannerText"
-        android:layout_width="233dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginTop="16dp"
-        android:text="UNICYCLE FOOTBALL LEAGUE"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:id="@+id/uflTextLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="102dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/uflLogoText" />
 
 </android.support.constraint.ConstraintLayout>

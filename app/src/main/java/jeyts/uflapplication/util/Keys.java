@@ -36,6 +36,8 @@ public class Keys {
     public static final String KEY_time = "Time";
     public static final String Key_location = "Location";
     public static final String KEY_team = "Game";
+    public static final String KEY_teamStand = "teamStand";
+    public static final String KEY_standScore = "standScore";
 
 }
 //"Passing_TDs":17,

@@ -15,6 +15,25 @@ public class MyDataModel {
     private String date;
     private String time2;
     private String Game;
+    private String teamStand;
+    private String standScore;
+
+    public String getTeamStand() {
+        return teamStand;
+    }
+
+    public void setTeamStand(String teamStand) {
+        this.teamStand = teamStand;
+    }
+
+    public String getStandScore() {
+        return standScore;
+    }
+
+    public void setStandScore(String standScore) {
+        this.standScore = standScore;
+    }
+
 
     public void setGame(String game){
         Game = game;

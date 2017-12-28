@@ -6,7 +6,8 @@
     android:id="@+id/parentLayout"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".scheduleActivity">
+    tools:context=".scheduleActivity"
+    android:background="@mipmap/bluebackground">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
