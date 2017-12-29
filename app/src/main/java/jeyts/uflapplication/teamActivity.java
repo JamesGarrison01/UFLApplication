@@ -2,7 +2,10 @@ package jeyts.uflapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 
 public class teamActivity extends AppCompatActivity {
@@ -21,17 +24,77 @@ public class teamActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+
+        Intent newIntent = getIntent();
+        int Check = newIntent.getIntExtra("Value", 1);
+
+        if(Check == 0){
+            navigation.setSelectedItemId(R.id.navigation_stats);
+        }
+        else{
+            navigation.setSelectedItemId(R.id.navigation_team);
+        }
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+    }
+
+    public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_schedule:
+                    goSched();
+                    return true;
+                case R.id.navigation_stats:
+                    goStats();
+                    return true;
+                case R.id.navigation_team:
+                    goTeam();
+                    return true;
+                case R.id.navigation_home:
+                    goHome();
+                    return true;
+                case R.id.navigation_ruleBook:
+                    goRule();
+                    return true;
+            }
+            return false;
+        }
+    };
+
+    public void goHome(){
+        Intent newIntent = new Intent (this, landingPage.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the team page when clicked
+    public void goTeam(){
+        Intent newIntent = new Intent (this, teamActivity.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the rule page when clicked
+    public void goRule(){
+        Intent newIntent = new Intent (this, rulePage.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the stats page when clicked
+    public void goStats(){
+        int temp = 0;
+        Intent newIntent = new Intent (this, teamActivity.class);
+        newIntent.putExtra("Value", temp);
+        startActivity(newIntent);
+    }
+
+    //Goes to the Schedule page when clicked
+    public void goSched(){
+        Intent newIntent = new Intent (this, scheduleActivity.class);
+        startActivity(newIntent);
     }
 
     public void goBlackouts(View view){

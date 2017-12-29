@@ -33,7 +33,9 @@ public class newLanding extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
+        setContentView(R.layout.activity_new_landing);
+
+
 
         /**
          * Array List for Binding Data from JSON to this List
@@ -49,44 +51,21 @@ public class newLanding extends AppCompatActivity {
          */
         listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Snackbar.make(findViewById(R.id.parentLayout), list.get(position).getName() + " => " + list.get(position).getName(), Snackbar.LENGTH_LONG).show();
-            }
-        });
 
         new newLanding.GetDataTask().execute();
 
-
-        /**
-         * Just to know onClick and Printing Hello Toast in Center.
-         */
-//        Toast toast = Toast.makeText(getApplicationContext(), "Click the button to load", Toast.LENGTH_LONG);
-//        toast.setGravity(Gravity.CENTER, 0, 0);
-//        toast.show();
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(@NonNull View view) {
-//
-//                /**
-//                 * Checking Internet Connection
-//                 */
-//                if (InternetConnection.checkConnection(getApplicationContext())) {
-//                    new GetDataTask().execute();
-//                } else {
-//                    Snackbar.make(view, "Internet Connection Not Available", Snackbar.LENGTH_LONG).show();
-//                }
-//            }
-//        });
     }
 
 
     //Goes to the team page when clicked
     public void goTeam(View view){
         Intent newIntent = new Intent (this, teamActivity.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the rule page when clicked
+    public void goRule(View view){
+        Intent newIntent = new Intent (this, rulePage.class);
         startActivity(newIntent);
     }
 
@@ -125,7 +104,6 @@ public class newLanding extends AppCompatActivity {
                 jIndex=x;
 
             dialog = new ProgressDialog(newLanding.this);
-            dialog.setTitle("Organizing Stats: ");
             dialog.setMessage("Loading...");
             dialog.show();
         }
@@ -181,7 +159,7 @@ public class newLanding extends AppCompatActivity {
                                  *
                                  */
                                 JSONObject innerObject = array.getJSONObject(jIndex);
-                                String name = innerObject.getString(Keys.KEY_teamStand);
+                                String teamStand = innerObject.getString(Keys.KEY_teamStand);
                                 String standScore = innerObject.getString(Keys.KEY_standScore);
 
 
@@ -194,7 +172,7 @@ public class newLanding extends AppCompatActivity {
                                 //JSONObject phoneObject = innerObject.getJSONObject(Keys.KEY_PHONE);
                                 //String phone = phoneObject.getString(Keys.KEY_MOBILE);
 
-                                model.setName(name);
+                                model.setTeamStand(teamStand);
                                 model.setStandScore(standScore);
 
 

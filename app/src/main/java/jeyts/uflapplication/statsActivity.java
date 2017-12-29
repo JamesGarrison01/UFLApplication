@@ -6,12 +6,15 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -75,6 +78,8 @@ public class statsActivity extends AppCompatActivity {
 
        new GetDataTask().execute();
 
+
+
         inputSearch.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -95,6 +100,68 @@ public class statsActivity extends AppCompatActivity {
                 // TODO Auto-generated method stub
             }
         });
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setSelectedItemId(R.id.navigation_stats);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+    }
+
+    public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_schedule:
+                    goSched();
+                    return true;
+                case R.id.navigation_stats:
+                    goStats();
+                    return true;
+                case R.id.navigation_team:
+                    goTeam();
+                    return true;
+                case R.id.navigation_home:
+                    goHome();
+                    return true;
+                case R.id.navigation_ruleBook:
+                    goRule();
+                    return true;
+            }
+            return false;
+        }
+    };
+
+    public void goHome(){
+        Intent newIntent = new Intent (this, landingPage.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the team page when clicked
+    public void goTeam(){
+        Intent newIntent = new Intent (this, teamActivity.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the rule page when clicked
+    public void goRule(){
+        Intent newIntent = new Intent (this, rulePage.class);
+        startActivity(newIntent);
+    }
+
+    //Goes to the stats page when clicked
+    public void goStats(){
+        int temp = 0;
+        Intent newIntent = new Intent (this, teamActivity.class);
+        newIntent.putExtra("Value", temp);
+        startActivity(newIntent);
+    }
+
+    //Goes to the Schedule page when clicked
+    public void goSched(){
+        Intent newIntent = new Intent (this, scheduleActivity.class);
+        startActivity(newIntent);
     }
 
 

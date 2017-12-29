@@ -187,9 +187,17 @@ KICKING OUT WITH INTENT: It is hard to gauge when someone kicks out their unicyc
         6]Unicychos    2 - 6
         7]Chupacabras  0 - 8"
     </string>
-    <string name="action_settings">Settings</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_teams">Teams</string>
+    <string name="title_stats">Stats</string>
+    <string name="title_ruleBook">RuleBook</string>
+    <string name="title_home">Home</string>
+    <string name="action_settings">Action</string>
     <string name="title_activity_rule_page"> Rules </string>
     <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 
 

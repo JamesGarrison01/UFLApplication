@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,97 +7,230 @@
     android:background="@mipmap/bluebackground"
     tools:context="jeyts.uflapplication.teamActivity">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="558dp">
+    <Button
+    android:id="@+id/teamThreeBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="20dp"
+    android:onClick="goChupacabras"
+    android:text="Chupacabras"
+    app:layout_constraintBottom_toTopOf="@+id/teamFiveBtn"
+    app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/teamThreeBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="20dp"
-            android:onClick="goChupacabras"
-            android:text="Chupacabras"
-            app:layout_constraintBottom_toTopOf="@+id/teamFiveBtn"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/teamFiveBtn"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="20dp"
+        android:onClick="goHotdogs"
+        android:text="Hotdogs"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/teamFiveBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="20dp"
-            android:onClick="goHotdogs"
-            android:text="Hotdogs"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/teamBtnSix"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="goUnicychos"
+        android:text="Unicychos"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/teamBtnSix"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="20dp"
-            android:onClick="goUnicychos"
-            android:text="Unicychos"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+    android:id="@+id/teamFourBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="20dp"
+    android:onClick="goGnarwhals"
+    android:text="Gnarwhals"
+    app:layout_constraintBottom_toTopOf="@+id/teamBtnSix"
+    app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/teamFourBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="20dp"
-            android:onClick="goGnarwhals"
-            android:text="Gnarwhals"
-            app:layout_constraintBottom_toTopOf="@+id/teamBtnSix"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+    android:id="@+id/teamOneBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="20dp"
+    android:onClick="goBlackouts"
+    android:text="Blackouts"
+    app:layout_constraintBottom_toTopOf="@+id/teamThreeBtn"
+    app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/teamOneBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="20dp"
-            android:onClick="goBlackouts"
-            android:text="Blackouts"
-            app:layout_constraintBottom_toTopOf="@+id/teamThreeBtn"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+    android:id="@+id/teamTwoBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="20dp"
+    android:onClick="goBeardos"
+    android:text="Beardos"
+    app:layout_constraintBottom_toTopOf="@+id/teamFourBtn"
+    app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/teamTwoBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="20dp"
-            android:onClick="goBeardos"
-            android:text="Beardos"
-            app:layout_constraintBottom_toTopOf="@+id/teamFourBtn"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+    android:id="@+id/teamSevenBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="20dp"
+    android:onClick="goUnicorns"
+    android:text="Unicorns"
+    app:layout_constraintBottom_toTopOf="@+id/teamOneBtn"
+    app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/teamSevenBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="20dp"
-            android:onClick="goUnicorns"
-            android:text="Unicorns"
-            app:layout_constraintBottom_toTopOf="@+id/teamOneBtn"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+    android:id="@+id/teamEightBtn"
+    android:layout_width="143dp"
+    android:layout_height="60dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="20dp"
+    android:onClick="goTDB"
+    android:text="Dumps"
+    app:layout_constraintBottom_toTopOf="@+id/teamTwoBtn"
+    app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/teamEightBtn"
-            android:layout_width="143dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="20dp"
-            android:onClick="goTDB"
-            android:text="Dumps"
-            app:layout_constraintBottom_toTopOf="@+id/teamTwoBtn"
-            app:layout_constraintEnd_toEndOf="parent" />
-    </android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.BottomNavigationView
+    android:id="@+id/navigation"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:background="?android:attr/windowBackground"
+    android:foreground="?attr/selectableItemBackground"
+    app:itemBackground="@color/Salmon"
+    app:itemIconTint="@android:color/white"
+    app:itemTextColor="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:menu="@menu/navigation" />
 
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@mipmap/bluebackground"-->
+    <!--tools:context="jeyts.uflapplication.teamActivity">-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="558dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamThreeBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:onClick="goChupacabras"-->
+            <!--android:text="Chupacabras"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamFiveBtn"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamFiveBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:onClick="goHotdogs"-->
+            <!--android:text="Hotdogs"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/navigation"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamBtnSix"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:onClick="goUnicychos"-->
+            <!--android:text="Unicychos"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/navigation"-->
+            <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamFourBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:onClick="goGnarwhals"-->
+            <!--android:text="Gnarwhals"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamBtnSix"-->
+            <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamOneBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:onClick="goBlackouts"-->
+            <!--android:text="Blackouts"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamThreeBtn"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamTwoBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:onClick="goBeardos"-->
+            <!--android:text="Beardos"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamFourBtn"-->
+            <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamSevenBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:onClick="goUnicorns"-->
+            <!--android:text="Unicorns"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamOneBtn"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/teamEightBtn"-->
+            <!--android:layout_width="143dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:onClick="goTDB"-->
+            <!--android:text="Dumps"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/teamTwoBtn"-->
+            <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/navigation"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:background="?android:attr/windowBackground"-->
+            <!--android:foreground="?attr/selectableItemBackground"-->
+            <!--app:itemBackground="@color/Salmon"-->
+            <!--app:itemIconTint="@android:color/white"-->
+            <!--app:itemTextColor="@android:color/white"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:menu="@menu/navigation" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</android.support.design.widget.CoordinatorLayout>-->

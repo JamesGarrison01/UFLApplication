@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/home"
+        android:title="@string/title_home" />
+
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@mipmap/calendar"
+        android:title="@string/title_schedule" />
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@mipmap/barchart"
+        android:title="@string/title_stats" />
+
+    <item
+        android:id="@+id/navigation_ruleBook"
+        android:icon="@mipmap/footballrefereewhistle"
+        android:title="@string/title_ruleBook" />
+
+    <item
+        android:id="@+id/navigation_team"
+        android:icon="@mipmap/teamshield"
+        android:title="@string/title_teams" />
+
+</menu>
