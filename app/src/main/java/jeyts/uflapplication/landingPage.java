@@ -35,6 +35,8 @@ public class landingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
+
+
         /**
          * Array List for Binding Data from JSON to this List
          */

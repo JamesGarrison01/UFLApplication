@@ -9,13 +9,12 @@
 
     <application
         android:allowBackup="true"
+        android:background="@mipmap/bluebackground"
         android:icon="@mipmap/ic_unicycle"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_unicycle"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:background="@mipmap/bluebackground">
-
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".landingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,7 +47,11 @@
             android:name=".blackoutsActivity"
             android:label="@string/title_activity_blackouts"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".newLanding"></activity>
+        <activity android:name=".newLanding" />
+        <activity
+            android:name=".rulePage"
+            android:label="@string/title_activity_rule_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -73,18 +73,44 @@ public class MyDataModel {
         this.teamName = teamName;
     }
 
+    public String getPercentage(String hit, String attempts){
+        int hit2;
+        int attempts2;
+        int percent;
+
+        hit2 = Integer.parseInt(hit);
+        attempts2 = Integer.parseInt(attempts);
+
+        percent = hit2/attempts2*100;
+
+        return Integer.toString(percent);
+    }
+
     public String dateDetails(){
         return Game + "\nTime: "  + time2 + "\nLocation: " + location;
     }
 
     public String playersStats(){
-        return teamName + "\n" + "Completions: " + Completions + "\nAttempts: " + Attempts + "\nPassing Touchdowns: "
-                + passTouchdowns+ "\nInterceptions: " + Interceptions+ "\nPassing Units: " + passingUnits
-                + "\nCatches: " + Catches + "\nReceiving Touchdowns: " + receiveTouchdowns + "\nReceiving Units: " + receiveUnits
+        return "OFFENSE" + "\n" + "Completions: " + Completions + "\nAttempts: " + Attempts + "\nPassing Touchdowns: "
+                + passTouchdowns+ "\nInterceptions Thrown: " + Interceptions+ "\nPassing Units: " + passingUnits
+                + "\nCatches: " + Catches + "\nReceiving Touchdowns: " + receiveTouchdowns + "\nReceiving Units: " + receiveUnits + "\n\nDEFENSE"
                 + "\nTackles: " + Tackles + "\nDefensive Interception: " + defInterception + "\nForced Fumble: "
-                + forceFumble + "\nFumble Recovery" + fumbleRecovery + "\nSacks: " + Sacks + "\nDeflections: " + Deflections
+                + forceFumble + "\nFumble Recovery: " + fumbleRecovery + "\nSacks: " + Sacks + "\nDeflections: " + Deflections
                 + "\nDefnsive Touchdowns: " + defTD + "\nRushing Touchdowns: " + rushTouchdowns + "\nRushing Units: "
-                + rushUnits + "\nRushes: " + Rushes + "\nField Goals Made: " + fgMade + "\nField Goals Attempted: " + fgTry + "\nKickoff Return TDs: " +kickRTD;
+                + rushUnits + "\nRushes: " + Rushes + "\nField Goals Made: " + fgMade + "\nField Goals Attempted: " + fgTry + "\nKickoff Return TDs: " +kickRTD + "\n****************\n";
+    }
+
+    public String offenseStats(){
+        return  teamName + "\nOFFENSE" + "\n" + "Completions: " + Completions + "\nAttempts: " + Attempts + "\nPassing Touchdowns: "
+                + passTouchdowns+ "\nInterceptions Thrown: " + Interceptions+ "\nPassing Units: " + passingUnits
+                + "\nCatches: " + Catches + "\nReceiving Touchdowns: " + receiveTouchdowns + "\nReceiving Units: " + receiveUnits + "\nRushing Touchdowns: " + rushTouchdowns + "\nRushing Units: "
+                + rushUnits + "\nRushes: " + Rushes + "\nField Goals Made: " + fgMade + "\nField Goals Attempted: " + fgTry + "\nKickoff Return TDs: " +kickRTD + "\n*******************\n\n";
+    }
+
+    public String defenseStats(){
+        return "\nDEFENSE" + "\nTackles: " + Tackles + "\nDefensive Interception: " + defInterception + "\nForced Fumble: "
+                + forceFumble + "\nFumble Recovery: " + fumbleRecovery + "\nSacks: " + Sacks + "\nDeflections: " + Deflections
+                + "\nDefnsive Touchdowns: " + defTD +"\n*******************\n\n";
     }
 
     public String getName() {

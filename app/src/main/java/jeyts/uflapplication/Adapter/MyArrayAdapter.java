@@ -1,6 +1,7 @@
 package jeyts.uflapplication.Adapter;
 
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,7 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
     public View getView(int position, View convertView, ViewGroup parent) {
         final ViewHolder vh;
         if (convertView == null) {
-            View view = mInflater.inflate(R.layout.layout_row_view, parent, false);
+            View view = mInflater.inflate(R.layout.layout_stats_view, parent, false);
             vh = ViewHolder.create((RelativeLayout) view);
             view.setTag(vh);
         } else {
@@ -46,7 +47,11 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
         MyDataModel item = getItem(position);
 
         vh.textViewName.setText(item.getName());
-        vh.textViewplayerStats.setText(item.playersStats());
+        vh.textViewOffenseStats.setText(item.offenseStats());
+        vh.textViewDefenseStats.setText(item.defenseStats());
+       // vh.textViewDefenseStats.setText(Html.fromHtml(item.defenseStats()));
+
+//        vh.textViewplayerStats.setText(item.playersStats());
 //        vh.textViewCompletions.setText(item.getCompletions());
 //        vh.textViewAttempts.setText(item.getAttempts());
 //        vh.textViewpassTouchdowns.setText(item.getPassTouchdowns());
@@ -85,7 +90,9 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
         public final RelativeLayout rootView;
 
         public final TextView textViewName;
-        public final TextView textViewplayerStats;
+        public final TextView textViewOffenseStats;
+        public final TextView textViewDefenseStats;
+//        public final TextView textViewplayerStats;
 //        public final TextView textViewAttempts;
 //        public final TextView textViewCompletions;
 //        public final TextView textViewpassTouchdowns, textViewInterceptions,	textViewpassingUnits;
@@ -95,14 +102,16 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
 
 //        textViewpassTouchdowns, textViewInterceptions,	textViewpassingUnits, textViewCatches, textViewreceiveTouchdowns, textViewreceiveUnits,	textViewTackles, textViewdefInterception, textViewforceFumble, textViewfumbleRecovery,	textViewSacks,	textViewDeflections,	textViewdefTD,	textViewrushTouchdowns,	textViewrushUnits, textViewRushes,	textViewfgMade,	textViewfgTry,	textViewkickRTD
 
-        private ViewHolder(RelativeLayout rootView, TextView textViewName, TextView textViewplayerStats/* TextView textViewCompletions, TextView textViewAttempts, TextView textViewpassTouchdowns
+        private ViewHolder(RelativeLayout rootView, TextView textViewName, TextView textViewOffenseStats, TextView textViewDefenseStats /*TextView textViewplayerStats TextView textViewCompletions, TextView textViewAttempts, TextView textViewpassTouchdowns
             , TextView textViewInterceptions, TextView textViewpassingUnits, TextView textViewCatches, TextView textViewreceiveTouchdowns, TextView textViewreceiveUnits,
                            TextView textViewTackles, TextView textViewdefInterception, TextView textViewforceFumble, TextView textViewfumbleRecovery, TextView textViewSacks
             , TextView textViewDeflections, TextView textViewdefTD, TextView textViewrushTouchdowns, TextView textViewrushUnits, TextView textViewRushes, TextView textViewfgMade
             , TextView textViewfgTry, TextView textViewkickRTD*/) {
             this.rootView = rootView;
             this.textViewName = textViewName;
-            this.textViewplayerStats = textViewplayerStats;
+//            this.textViewplayerStats = textViewplayerStats;
+            this.textViewDefenseStats = textViewDefenseStats;
+            this.textViewOffenseStats = textViewOffenseStats;
 //            this.textViewCompletions = textViewCompletions;
 //            this.textViewAttempts = textViewAttempts;
 //            this.textViewpassTouchdowns = textViewpassTouchdowns;
@@ -128,8 +137,10 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
         }
 
         public static ViewHolder create(RelativeLayout rootView) {
-            TextView textViewplayerStats = (TextView) rootView.findViewById(R.id.textViewCompletions);
+         //   TextView textViewplayerStats = (TextView) rootView.findViewById(R.id.textViewCompletions);
             TextView textViewName = (TextView) rootView.findViewById(R.id.textViewName);
+            TextView textViewOffenseStats = (TextView) rootView.findViewById(R.id.textViewOffense);
+            TextView textViewDefenseStats = (TextView) rootView.findViewById(R.id.textViewDefense);
 //            TextView textViewCompletions = (TextView) rootView.findViewById(R.id.textViewCompletions);
 //            TextView textViewAttempts = (TextView) rootView.findViewById(R.id.textViewCompletions);
 //            TextView textViewpassTouchdowns = (TextView) rootView.findViewById(R.id.textViewCompletions);
@@ -153,7 +164,7 @@ public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
 //            TextView textViewkickRTD = (TextView) rootView.findViewById(R.id.textViewCompletions);
 
 
-            return new ViewHolder(rootView, textViewName, textViewplayerStats/*,textViewCompletions, textViewAttempts,
+            return new ViewHolder(rootView, textViewName, textViewOffenseStats, textViewDefenseStats /*textViewplayerStats,textViewCompletions, textViewAttempts,
                     textViewpassTouchdowns, textViewInterceptions,	textViewpassingUnits,
                     textViewCatches, textViewreceiveTouchdowns, textViewreceiveUnits,
                     textViewTackles, textViewdefInterception, textViewforceFumble,

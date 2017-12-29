@@ -34,6 +34,7 @@
         7]Chupacabras  0 - 8"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_rule_page">rulePage</string>
 </resources>
 
 
