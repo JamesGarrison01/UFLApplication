@@ -9,9 +9,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 //import android.widget.Toast;
 
@@ -34,6 +37,7 @@ public class statsActivity extends AppCompatActivity {
     private ArrayList<MyDataModel> list;
     private MyArrayAdapter adapter;
     private String teamName = "BlackOuts";
+    EditText inputSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +64,7 @@ public class statsActivity extends AppCompatActivity {
          * Getting List and Setting List Adapter
          */
         listView = (ListView) findViewById(R.id.listView);
+        inputSearch = (EditText) findViewById(R.id.inputSearch);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -70,30 +75,28 @@ public class statsActivity extends AppCompatActivity {
 
        new GetDataTask().execute();
 
+        inputSearch.addTextChangedListener(new TextWatcher() {
 
-        /**
-         * Just to know onClick and Printing Hello Toast in Center.
-         */
-//        Toast toast = Toast.makeText(getApplicationContext(), "Click the button to load", Toast.LENGTH_LONG);
-//        toast.setGravity(Gravity.CENTER, 0, 0);
-//        toast.show();
+            @Override
+            public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+                // When user changed the Text
+                statsActivity.this.adapter.getFilter().filter(cs);
+            }
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(@NonNull View view) {
-//
-//                /**
-//                 * Checking Internet Connection
-//                 */
-//                if (InternetConnection.checkConnection(getApplicationContext())) {
-//                    new GetDataTask().execute();
-//                } else {
-//                    Snackbar.make(view, "Internet Connection Not Available", Snackbar.LENGTH_LONG).show();
-//                }
-//            }
-//        });
+            @Override
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+                                          int arg3) {
+                // TODO Auto-generated method stub
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
     }
+
 
     /**
      * Creating Get Data Task for Getting Data From Web

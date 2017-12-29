@@ -33,6 +33,7 @@
             android:name=".statsActivity"
             android:label="@string/title_activity_stats"
             android:parentActivityName=".landingPage"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".scheduleActivity"
