@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -38,11 +39,28 @@ public class scheduleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
+        setContentView(R.layout.activity_schedule);
         //Fresco.initialize(this);
 
         //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //   setSupportActionBar(toolbar);
+        FloatingActionButton mapsButton = (FloatingActionButton) findViewById(R.id.fab);
+        mapsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(scheduleActivity.this, MapsActivity.class));
+               // startActivity(new Intent(v.getContext(), MapsActivity.class));
+            }
+        });
+//
+//        fabImageButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //here
+//                startActivity(new Intent(YourCurrentActivity.this,NewActivity.class));
+//            }
+//        });
+
 
 
 

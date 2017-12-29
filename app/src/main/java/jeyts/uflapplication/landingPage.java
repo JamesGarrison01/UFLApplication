@@ -63,6 +63,12 @@ public class landingPage extends AppCompatActivity {
         startActivity(newIntent);
     }
 
+    //Goes to the rule page when clicked
+    public void goRule(View view){
+        Intent newIntent = new Intent (this, rulePage.class);
+        startActivity(newIntent);
+    }
+
     //Goes to the stats page when clicked
     public void goStats(View view){
         Intent newIntent = new Intent (this, teamActivity.class);

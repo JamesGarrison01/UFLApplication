@@ -39,7 +39,7 @@
     <color name="OldLace">#FDF5E6</color>
     <color name="LightGoldenrodYellow">#FAFAD2</color>
     <color name="Linen">#FAF0E6</color>
-    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="AntiqueWhite">#faebd7</color>
     <color name="Salmon">#FA8072</color>
     <color name="GhostWhite">#F8F8FF</color>
 </resources>
