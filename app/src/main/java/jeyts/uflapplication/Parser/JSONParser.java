@@ -17,14 +17,6 @@ import java.io.IOException;
 
 public class JSONParser {
 
-    //private static String teamName  = "Sheet1";
-    //private static String teamName;
-
-//    public static void setTeamName(String teamName1){
-//       teamName = teamName1;
-//    }
-//private static final String MAIN_URL = "https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1myNLqGEMJboGKMDJRMmNWuhTE30qePN-QDS7PMxrJyc&sheet=";
-    //private static final String MAIN_URL = "https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1myNLqGEMJboGKMDJRMmNWuhTE30qePN-QDS7PMxrJyc&sheet=" + teamName;
 private static final String MAIN_URL = "https://script.google.com/macros/s/AKfycbxOLElujQcy1-ZUer1KgEvK16gkTLUqYftApjNCM_IRTL3HSuDk/exec?id=1q3aE67oflERYwJndFTmXr_nw26R7vqOojMh68Ik3tG4&sheet=";
 
     public static final String TAG = "TAG";

@@ -108,9 +108,9 @@ public class MyDataModel {
     }
 
     public String defenseStats(){
-        return "\nDEFENSE" + "\nTackles: " + Tackles + "\nDefensive Interception: " + defInterception + "\nForced Fumble: "
-                + forceFumble + "\nFumble Recovery: " + fumbleRecovery + "\nSacks: " + Sacks + "\nDeflections: " + Deflections
-                + "\nDefnsive Touchdowns: " + defTD +"\n*******************\n\n";
+        return "\nDEFENSE" + "\nTackles: " + Tackles + "\nDefensive Int: " + defInterception + "\nForced Fumble: "
+                + forceFumble + "\nFumble Rec: " + fumbleRecovery + "\nSacks: " + Sacks + "\nDeflections: " + Deflections
+                + "\nDefnsive TD: " + defTD +"\n*******************\n\n";
     }
 
     public String getName() {

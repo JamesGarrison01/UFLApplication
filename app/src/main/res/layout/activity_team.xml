@@ -63,15 +63,15 @@
     app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-    android:id="@+id/teamTwoBtn"
-    android:layout_width="143dp"
-    android:layout_height="60dp"
-    android:layout_marginBottom="32dp"
-    android:layout_marginEnd="20dp"
-    android:onClick="goBeardos"
-    android:text="Beardos"
-    app:layout_constraintBottom_toTopOf="@+id/teamFourBtn"
-    app:layout_constraintEnd_toEndOf="parent" />
+        android:id="@+id/teamTwoBtn"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="goBeardos"
+        android:text="Bierdos"
+        app:layout_constraintBottom_toTopOf="@+id/teamFourBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
     android:id="@+id/teamSevenBtn"

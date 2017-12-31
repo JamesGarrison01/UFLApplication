@@ -23,36 +23,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\0a73bbb60165eb309e9e3dc53987ea43\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.6.2.aar\4feb145e834f25971948f9d560d51f3f\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="0ab379ccbc45dadc6843cf258d9e741075758dd5">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\14.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\23.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\ee1454914bae16363eda29bffcb97d1a\jars\classes.jar"
         jumboMode="false"
         min-sdk-version="21"
@@ -60,26 +30,6 @@
         revision="26.0.2"
         sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
         <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\10.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\521a52d1e16eeb543f6ded49f2d3367f\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\25.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.2.aar\b09b1d4f40c920fe206ecc2da98ec2cd\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="225f093d9a041f8206d812d3055a886a816ac365">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\16.jar" />
     </item>
     <item
         is-multidex="false"
@@ -153,16 +103,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.23.0\8e86c84ff3c98eca6423e97780325b299133d858\google-http-client-1.23.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="8e86c84ff3c98eca6423e97780325b299133d858">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\37.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-urlconnection\2.2.0\cb20062e14c523637b7643295418097b48cccec2\okhttp-urlconnection-2.2.0.jar"
         jumboMode="false"
         min-sdk-version="21"
@@ -170,6 +110,206 @@
         revision="26.0.2"
         sha1="cb20062e14c523637b7643295418097b48cccec2">
         <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.23.0\1bbe77a8594d7892571266392b8a7dd0a5980664\google-http-client-android-1.23.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1bbe77a8594d7892571266392b8a7dd0a5980664">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\drawee-0.5.0.aar\a5df414f628b5d048555c144170f9fb9\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="edcb1bb563fa950dfa638b8efd10398088ceaccc">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\23965f8faf771b7f8953022baa41552e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\fresco-0.5.0.aar\28dc9717abae6ffca97bb7eb03dd2cda\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6c828a82efd4d7b389ea45dcc883f38ba053263d">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\d062d173fb80ff96ce2a120e22a8cbff\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233d88c6f961d2a84758dfe27b7af61318190c7b">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.5.0.aar\1bbe56bad90f6ab3b390fe725c6182d0\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aafdd2ccb8b4a3bfecb83127f189cbbb4f864a73">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\fbcore-0.5.0.aar\ddf062fdf74a5b736056b0a44115cf27\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4c52b6f76d1afe959a9b6651ae61d2b0d158f8c9">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.23.0\522ea860eb48dee71dfe2c61a1fd09663539f556\google-api-client-1.23.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="522ea860eb48dee71dfe2c61a1fd09663539f556">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\d57a000baa07478d61063a8c50d59e4d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.6.2.aar\b455694c0af13e2b02b81da5c1c44d74\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3810dd933166e9c76b2d192ee18d5699e9701bb4">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.23.0\e57ea1e2220bda5a2bd24ff17860212861f3c5cf\google-oauth-client-1.23.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e57ea1e2220bda5a2bd24ff17860212861f3c5cf">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5e96436f3793317e04666202983a1e1f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\26326a9709668ebd21dabdd42ff42dc7\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.23.0\b95521559faf49989ff036a5b15fd16476bdc955\google-api-client-android-1.23.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b95521559faf49989ff036a5b15fd16476bdc955">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\0a73bbb60165eb309e9e3dc53987ea43\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.6.2.aar\4feb145e834f25971948f9d560d51f3f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0ab379ccbc45dadc6843cf258d9e741075758dd5">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\521a52d1e16eeb543f6ded49f2d3367f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.23.0\8e86c84ff3c98eca6423e97780325b299133d858\google-http-client-1.23.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8e86c84ff3c98eca6423e97780325b299133d858">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\37.jar" />
     </item>
     <item
         is-multidex="false"
@@ -193,16 +333,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.23.0\1bbe77a8594d7892571266392b8a7dd0a5980664\google-http-client-android-1.23.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="1bbe77a8594d7892571266392b8a7dd0a5980664">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\22.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
         jumboMode="false"
         min-sdk-version="21"
@@ -210,36 +340,6 @@
         revision="26.0.2"
         sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
         <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\50.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\drawee-0.5.0.aar\a5df414f628b5d048555c144170f9fb9\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="edcb1bb563fa950dfa638b8efd10398088ceaccc">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\18.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\32.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\fresco-0.5.0.aar\28dc9717abae6ffca97bb7eb03dd2cda\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="6c828a82efd4d7b389ea45dcc883f38ba053263d">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -283,56 +383,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.2.aar\7e216c3d6a2fcc601b33d6e57e67895a\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="fd6ae8c61bd548b134265ef3c37807d4efcc854c">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\17.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.5.0.aar\1bbe56bad90f6ab3b390fe725c6182d0\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="aafdd2ccb8b4a3bfecb83127f189cbbb4f864a73">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\19.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\fbcore-0.5.0.aar\ddf062fdf74a5b736056b0a44115cf27\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="4c52b6f76d1afe959a9b6651ae61d2b0d158f8c9">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\20.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.23.0\522ea860eb48dee71dfe2c61a1fd09663539f556\google-api-client-1.23.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="522ea860eb48dee71dfe2c61a1fd09663539f556">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\21.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.2.aar\2d8f60f7a27687273656db796a19f131\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="e9dc052d4d36b53c3a1bb2d5bf634fcac5d35037">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\15.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
         jumboMode="false"
         min-sdk-version="21"
@@ -350,6 +400,16 @@
         revision="26.0.2"
         sha1="40340c0748190fe897baf7bffbc1b282734294e5">
         <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\5ef5bd261fad2eec2d9f52d570c9e850\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d2af2ef4d987d753f2e8ee2d1480ab964d5c7273">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\53.jar" />
     </item>
     <item
         is-multidex="false"
@@ -373,33 +433,13 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\d57a000baa07478d61063a8c50d59e4d\jars\classes.jar"
+        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\f0e5317a1f94a5b468763f0383946fa6\jars\classes.jar"
         jumboMode="false"
         min-sdk-version="21"
         optimize="true"
         revision="26.0.2"
-        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\24.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.6.2.aar\b455694c0af13e2b02b81da5c1c44d74\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="3810dd933166e9c76b2d192ee18d5699e9701bb4">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.23.0\e57ea1e2220bda5a2bd24ff17860212861f3c5cf\google-oauth-client-1.23.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="e57ea1e2220bda5a2bd24ff17860212861f3c5cf">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\34.jar" />
+        sha1="601ebd8fa027a3dad924ffa1cb14689ced5aa436">
+        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\51.jar" />
     </item>
     <item
         is-multidex="false"
@@ -410,36 +450,6 @@
         revision="26.0.2"
         sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
         <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\46.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5e96436f3793317e04666202983a1e1f\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\38.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\26326a9709668ebd21dabdd42ff42dc7\jars\classes.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\43.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\jeyts\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.23.0\b95521559faf49989ff036a5b15fd16476bdc955\google-api-client-android-1.23.0.jar"
-        jumboMode="false"
-        min-sdk-version="21"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b95521559faf49989ff036a5b15fd16476bdc955">
-        <dex dex="C:\Users\jeyts\AndroidStudioProjects\uflApplication\app\build\intermediates\transforms\preDex\release\7.jar" />
     </item>
     <item
         is-multidex="false"

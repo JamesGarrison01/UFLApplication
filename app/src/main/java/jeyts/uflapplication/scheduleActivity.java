@@ -183,9 +183,6 @@ public class scheduleActivity extends AppCompatActivity {
              * Getting JSON Object from Web Using okHttp
              */
 
-            //JSONParser jsonParser = new JSONParser(teamName);
-            //JSONParser.setTeamName(teamName);
-
             JSONObject jsonObject = JSONParser.getDataFromWeb(teamName);
 
             try {

@@ -46,10 +46,6 @@ public class statsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
-        //Fresco.initialize(this);
-
-     //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
         teamName = intent.getExtras().getString("key");
@@ -79,7 +75,10 @@ public class statsActivity extends AppCompatActivity {
        new GetDataTask().execute();
 
 
-
+        /**
+         * Unused search function - at one point it will search by name for stats
+         * still appears but is unusued
+         */
         inputSearch.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -102,11 +101,15 @@ public class statsActivity extends AppCompatActivity {
         });
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setSelectedItemId(R.id.navigation_stats);
+        navigation.setSelectedItemId(R.id.navigation_stats); //determines which icon is hlighlighted
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
 
+
+    /**
+     * determines which activity it goes to based on selection
+     */
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -133,6 +136,9 @@ public class statsActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * goes to home activity when clicked
+     */
     public void goHome(){
         Intent newIntent = new Intent (this, landingPage.class);
         startActivity(newIntent);
@@ -202,9 +208,6 @@ public class statsActivity extends AppCompatActivity {
              * Getting JSON Object from Web Using okHttp
              */
 
-            //JSONParser jsonParser = new JSONParser(teamName);
-            //JSONParser.setTeamName(teamName);
-
             JSONObject jsonObject = JSONParser.getDataFromWeb(teamName);
 
             try {
@@ -268,14 +271,6 @@ public class statsActivity extends AppCompatActivity {
                                 String fgTry = innerObject.getString(Keys.KEY_fgTry);
                                 String kickRTD = innerObject.getString(Keys.KEY_kickRTD);
 
-
-
-
-                                /**
-                                 * Getting Object from Object "phone"
-                                 */
-                                //JSONObject phoneObject = innerObject.getJSONObject(Keys.KEY_PHONE);
-                                //String phone = phoneObject.getString(Keys.KEY_MOBILE);
 
                                 model.setName(name);
                                 model.setInterceptions(Interceptions);

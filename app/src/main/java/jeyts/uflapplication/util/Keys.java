@@ -40,11 +40,3 @@ public class Keys {
     public static final String KEY_standScore = "standScore";
 
 }
-//"Passing_TDs":17,
-//        "Interceptions_Thrown":4,
-//        "Passing_Units":754,
-//        "Catches":"",
-//        "Receiving_TDs":"",
-//        "Receiving_Units":"",
-//        "Tackles":29,
-//        "Defense_Interception":"","Forced_Fumble":2,"Forced_Recovery":1,"Sacks":1,"Deflections":5,"Defensive_TDs":"","Rushing_TDs":23,"Rushing_Units":1985,"Rushes":97,"Field_Goals_Made":"","Field_Goals_Try":"","Kickoff_TDs":

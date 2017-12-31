@@ -16,6 +16,11 @@ import java.util.List;
 
 public class MyArrayAdapter extends ArrayAdapter<MyDataModel> {
 
+    /**
+     * NOTE: Several parts of commented out
+     *      This is for future design and will be left in until used
+     */
+
     List<MyDataModel> modelList;
     Context context;
     private LayoutInflater mInflater;

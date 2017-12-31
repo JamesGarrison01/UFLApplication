@@ -34,7 +34,6 @@ public class landingPage extends AppCompatActivity {
     private ArrayList<MyDataModel> list;
     private StandArrayAdapter adapter;
     private String teamName = "Standings";
-    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +60,14 @@ public class landingPage extends AppCompatActivity {
         new landingPage.GetDataTask().execute();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setSelectedItemId(R.id.navigation_home);
+        navigation.setSelectedItemId(R.id.navigation_home);//determines which icon is highlighted
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
+
+    /**
+     * navigates to each page when the icon is selected
+     */
 
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -92,17 +95,25 @@ public class landingPage extends AppCompatActivity {
         }
     };
 
+    /**
+     * goes to home activity
+     */
     public void goHome(){
         Intent newIntent = new Intent (this, landingPage.class);
         startActivity(newIntent);
     }
-
+    /**
+     * goes to team activity
+     */
     //Goes to the team page when clicked
     public void goTeam(){
         Intent newIntent = new Intent (this, teamActivity.class);
         startActivity(newIntent);
     }
 
+    /**
+     * goes to rulebook activity
+     */
     //Goes to the rule page when clicked
     public void goRule(){
         Intent newIntent = new Intent (this, rulePage.class);
@@ -204,19 +215,8 @@ public class landingPage extends AppCompatActivity {
                                 String teamStand = innerObject.getString(Keys.KEY_teamStand);
                                 String standScore = innerObject.getString(Keys.KEY_standScore);
 
-
-
-
-
-                                /**
-                                 * Getting Object from Object "phone"
-                                 */
-                                //JSONObject phoneObject = innerObject.getJSONObject(Keys.KEY_PHONE);
-                                //String phone = phoneObject.getString(Keys.KEY_MOBILE);
-
                                 model.setTeamStand(teamStand);
                                 model.setStandScore(standScore);
-
 
 
                                 /**

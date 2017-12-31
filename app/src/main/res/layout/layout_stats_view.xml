@@ -29,7 +29,7 @@
 
             <TextView
                 android:id="@+id/textViewOffense"
-                android:layout_width="170dp"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:textAppearanceSmall"
